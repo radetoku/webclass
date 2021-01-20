@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Lesson 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Welcome to Web Development Class</h1>
+<p>Welcome to Web Development Class</p>
+</header>
+<a href="http://www.theawepoly.org">This is a hyperlink</a>
+<ul>
+<li>Lesson 1</li>
+<li>Lesson 2</li>
+<li>Lesson 3</li>
+<li>Lesson 4</li>
+</ul>
+</body>
+<ol>
+<li>Lesson 1</li>
+<li>Lesson 2</li>
+<li>Lesson 3</li>
+<li>Lesson 4</li>
+</ol>
+
+<h1>Introduction to HTML</h1>
+<p id="par2">This is an association of great men and women that graduated in 1998 from <span class="blue">St. Ambrose's (Cath) Grammar School, Ondo</span>. Since graduation, individual members have moved ahead in life to achieving success in their own right. We're committed to bond and work together as a team to contribute meaningfully to our alma mater. <span class="blue">St Ambrose '98 Alumni Set</span> was inaugurated out of the passion to reunite and form a formidable union to build and develop infrastructure at alma mater, and secondly to contribute and empower members .
+The Presiden</p>
+<input type="text" id="userinput">
+<button onclick="myFunc()">Click Me</button>
+<script>
+document.write("The number 42 is a lucky number");
+document.getElementsByTagName("p");
+var parinfo=document.getElementById("par2").innerHTML;
+document.write(parinfo);
+
+myFunc();
+function myFunc(inputid){
+         var textvalue = document.getElementById("inputid").value;
+         document.getElementById("par2").innerHTML = textvalue;
+
+}
+</script>
+<?php
+echo "<p>Welcome to my World</p>"
+<?>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/process.php" method="POST">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+	  <option value="nigeria">Nigeria</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+
+</html>
